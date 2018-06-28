@@ -1,0 +1,8 @@
+.child-item{
+    font: normal 14px Arial;
+    display: block;
+}
+
+.parent-item{
+    font: bold 16px Arial;
+}

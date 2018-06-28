@@ -1,0 +1,6 @@
+.wrapper-child{
+    display: none;
+}
+.wrapper-child div > .child-item{
+    font: bold 16px Arial;
+}
