@@ -1,6 +1,14 @@
 .wrapper-child{
-    display: none;
+    opasity: 0;
+    -webkit-animation: fadeIn 1s;
+    animation: opacity 5s linear;
 }
-.wrapper-child div > .child-item{
-    font: bold 16px Arial;
+
+@keyframes opacity {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.wrapper-child > .child-item{
+    text-indent: 25px;
 }

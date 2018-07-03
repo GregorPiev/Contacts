@@ -22,7 +22,7 @@ class App extends Component {
           dataType: 'json',
           cache: false,
           success: function(result) {
-              console.log('Data of page:' + JSON.stringify(result.contactlist));
+              //console.log('Data of page:' + JSON.stringify(result.contactlist));
               this.setState({
                   contacts: result.contactlist,
                   loading: false
@@ -38,8 +38,8 @@ class App extends Component {
 
   render() {
       const { contacts, loading} =this.state;
-      console.log('Contact:' + JSON.stringify(contacts));
-      console.log('loading:' + loading);
+      //console.log('Contact:' + JSON.stringify(contacts));
+      //console.log('loading:' + loading);
 
     return (
         <div className='container'>
@@ -50,7 +50,7 @@ class App extends Component {
             {
                 (loading)?
                     <p>Loading Contact List...</p> :
-                    <ul><ContactList key={'cnt'} contactlist ={contacts} parent={0}/></ul>
+                    <ul id="main"><ContactList key={'cnt'} contactlist ={contacts} parent={0}/></ul>
 
             }
               </div>
